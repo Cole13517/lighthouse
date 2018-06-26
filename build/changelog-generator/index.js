@@ -5,6 +5,7 @@
  */
 'use strict';
 const readFileSync = require('fs').readFileSync;
+
 const resolve = require('path').resolve;
 const mainTemplate = readFileSync(resolve(__dirname, 'templates/template.hbs')).toString();
 const headerPartial = readFileSync(resolve(__dirname, 'templates/header.hbs')).toString();
